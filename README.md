@@ -24,4 +24,4 @@
 _*python manage.py runserver*_
 
 ### PR Link
-[PR](https://github.com/Ashar121299/Django-X/pull/2)
+[PR](https://github.com/Ashar121299/drf-api/pull/1)
