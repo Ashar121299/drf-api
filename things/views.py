@@ -1,0 +1,15 @@
+from django.shortcuts import render
+from rest_framework.generics import ListCreateAPIView,RetrieveUpdateDestroyAPIView
+from .serializers  import ThingSerializer
+# Create your views here.
+from .models import Thing
+
+
+class ThingListView(ListCreateAPIView):
+    queryset=Thing.objects.all()
+    serializer_class= ThingSerializer
+
+
+class ThingDetailView(RetrieveUpdateDestroyAPIView):
+    queryset=Thing.objects.all()
+    serializer_class= ThingSerializer
